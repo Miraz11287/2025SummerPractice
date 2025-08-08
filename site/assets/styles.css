@@ -1,0 +1,312 @@
+/* Базовые стили */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Шапка */
+header {
+  background-color: #004085;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #cce5ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Главный блок с изображением */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e6ea;
+  padding: 40px 20px;
+}
+
+.hero-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  color: #004085;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+}
+
+/* Раздел "Кратко о проекте" */
+.summary {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.summary h2 {
+  text-align: center;
+  color: #1a4d91;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.summary-item {
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.summary-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summary-item img {
+  max-width: 48px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.summary-item p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Подвал */
+footer {
+  background-color: #343a40;
+  color: #ddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* about */
+/* Секция общего контента (о проекте) */
+/* ===== ОБЩИЕ СЕКЦИИ ===== */
+.section {
+  padding: 60px 30px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/* ==== HERO С ДВУМЯ КОЛОНКАМИ ==== */
+.hero-alt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-alt .text-block {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-alt .image-block {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-alt img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  color: #1a4d91;
+  margin-bottom: 40px;
+}
+
+/* ==== FEATURES === */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.feature {
+  background-color: #f0f4fa;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature img {
+  width: 48px;
+  margin-bottom: 15px;
+  opacity: 0.85;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  color: #123d74;
+}
+
+/* ==== Технологии и этапы ==== */
+.tech-list, .steps-list {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 17px;
+  color: #333;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.steps-list li {
+  margin-bottom: 12px;
+}
+
+/* ==== Адаптивность ==== */
+@media (max-width: 768px) {
+  .hero-alt {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Блок с серым фоном — используется для секций */
+.section.bg-alt {
+  background-color: #f8f9fb;
+}
+
+/* ==== Список технологий ==== */
+.steps-list {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.steps-list li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #333;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px 16px 55px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.steps-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: #1a4d91;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* team */
+/* === Участники === */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.team-member {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 0 0 3px #1a4d91;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #1a4d91;
+}
+
+.team-member .role {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
