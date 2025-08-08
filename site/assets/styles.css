@@ -310,3 +310,81 @@ footer {
   color: #555;
   margin-bottom: 10px;
 }
+
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.resource-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.resource-card a {
+  color: #1a4d91;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resource-card a:hover {
+  text-decoration: underline;
+}
+
+.resource-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+}
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.journal-entry {
+  background-color: #ffffff;
+  border-left: 6px solid #1a4d91;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.journal-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #1a4d91;
+}
+
+.journal-entry p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.journal-entry .date {
+  font-size: 13px;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px;
+}
