@@ -10,23 +10,31 @@
 ├── docs/
 │   ├── README.md
 │   ├── practice_documentation.md
-│   └── ...
+│   └── practice_documentation.docx
 ├── reports/
 │   ├── README.md
 │   ├── report.pdf
-│   └── ...
+│   └── report.docx
 ├── site/
 │   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   └── images/
-│       └── logo.png
+│   ├── about.html
+│   ├── journal.html
+│   ├── resources.html
+│   ├── team.html
+│   └── assets/
+│      ├── style.css
+│      └── images/
+│          ├── integrantion.png
+│          ├── man.png
+│          ├── ovz.png
+│          ├── remote.png
+│          └── visual.png
 ├── src/
-│   ├── main.py
-│   └── ...
+│   └── textEditor.c
 ├── task/
 │   ├── README.md
-│   └── report_template.md
+│   ├── git_structure.md
+│   └── terms.md
 └── .gitignore
 ```
 
