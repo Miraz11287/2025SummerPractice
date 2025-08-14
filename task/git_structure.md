@@ -10,10 +10,12 @@
 ├── docs/
 │   ├── README.md
 │   ├── practice_documentation.md
-│   └── practice_documentation.docx
+│   └── 
 ├── reports/
 │   ├── README.md
 │   ├── report.pdf
+│   ├── practice_report_orgPartnr.md
+│   ├── practice_report_TextEditor.md
 │   └── report.docx
 ├── site/
 │   ├── index.html
